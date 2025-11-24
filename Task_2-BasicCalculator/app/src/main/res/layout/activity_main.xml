@@ -11,32 +11,40 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@color/white"
+        android:background="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <TextView
-            android:id="@+id/res"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:foregroundGravity="left"
-            android:gravity="left"
-            android:padding="10dp"
+      <HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
 
-            android:textColor="@color/white"
-            android:textDirection="ltr"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"  <-- IMPORTANT CHANGE HERE
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:foregroundGravity="left"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textDirection="ltr"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:singleLine="true" 
+        android:ellipsize="none"  
+        />
 
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+</HorizontalScrollView>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
