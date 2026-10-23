@@ -1,6 +1,6 @@
-### MSP Tasks
+## MSP Tasks
 
-## Tasks Architectures
+### Tasks Architectures
 
 ```mermaid
 flowchart TD
