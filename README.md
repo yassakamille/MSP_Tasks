@@ -1,6 +1,6 @@
 ### MSP Tasks
-[![Architecture diagram of yassakamille/msp_tasks](https://gitdiagram.com/yassakamille/msp_tasks/diagram.png)](https://gitdiagram.com/yassakamille/msp_tasks?utm_source=readme&utm_medium=picture)
-## Tasks Architecture
+
+## Tasks Architectures
 
 ```mermaid
 flowchart TD
